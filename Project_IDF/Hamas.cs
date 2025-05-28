@@ -8,8 +8,10 @@ namespace Project_IDF
 {
     internal class Hamas
     {
-        string Name;
+
+        string Name = "Hamas";
         int Year = 1987;
+
         string Commander;
         public List<Trorist> Trorists_Data = new List<Trorist> ();
 

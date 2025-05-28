@@ -49,8 +49,10 @@
     <Compile Include="DisplayForceStatus.cs" />
     <Compile Include="F_16CombatAircraft.cs" />
     <Compile Include="Hamas.cs" />
+
     <Compile Include="Hermes 460 Drone.cs" />
     <Compile Include="menu.cs" />
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strike Forces.cs" />

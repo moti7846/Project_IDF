@@ -43,10 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artillery.cs" />
+    <Compile Include="Command Dashboard.cs" />
+    <Compile Include="Data_Idf.cs" />
+    <Compile Include="DisplayForceStatus.cs" />
+    <Compile Include="F_16CombatAircraft.cs" />
     <Compile Include="Hamas.cs" />
+    <Compile Include="Hermes 460 Drone.cs" />
+    <Compile Include="menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strike Forces.cs" />
     <Compile Include="Trorist.cs" />
+    <Compile Include="weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

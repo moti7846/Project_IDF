@@ -13,17 +13,18 @@ namespace project_IDF
         public override int AmmoInventory { get; set; }
         public override string AttackToolEffectiveness { get; set; }
         public override string FuelLevel { get; set; }
+        public static int InstanceCount { get; private set; }
 
-        public Artillery(string name = "m109", int ammoInventory = 40, string attackToolEffectiveness = "Open Areas")
+
+        public Artillery(string name , int ammoInventory = 40, string attackToolEffectiveness = "Open Areas")
         {
             Name = name;
             AmmoInventory = ammoInventory;
             AttackToolEffectiveness = attackToolEffectiveness;
-        }
-        public override void RemoveWeapon()
-        {
-            AmmoInventory -= 1;
+            InstanceCount++;
 
         }
+
     }
 }
+

@@ -9,7 +9,7 @@ namespace Project_IDF
     internal class Hamas
     {
         string Name;
-        int Yoer = 1987;
+        int Year = 1987;
         string Commander;
         public List<Trorist> Trorists_Data = new List<Trorist> ();
 
@@ -17,6 +17,7 @@ namespace Project_IDF
         {
             return Name;
         }
+     
         public void set_Name(string name)
         {
             Name = name;

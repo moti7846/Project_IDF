@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Project_IDF
 {
     internal class Menu
@@ -32,6 +33,7 @@ namespace Project_IDF
 
         public void start()
         {
+
             Console.Clear();
             Console.WriteLine("Welcome to the IDF system");
             PrintMenu();
@@ -125,11 +127,13 @@ namespace Project_IDF
             {
                 case 1:
                     //תקיפה - מעבר לתפריט
-
+                    DisplayForceStatus.Displayer(data);
                     break;
                 case 2:
-                    // אמן - מעבר לתפריט ל1_2
-
+                    Console.WriteLine("enter the name of the weapon");
+                    string name = Console.ReadLine();
+                    data.AppendWeaponUnits(name);
+                    break;
                     break;
                 case 9:
                     // חזרה תפריט אחד קודם
@@ -223,7 +227,7 @@ namespace Project_IDF
                     return;
                 default:
                     Console.WriteLine("choice:9 or 0.");
-                    menu_1_3();
+                   menu_1_3();
                     break;
             }
             start();

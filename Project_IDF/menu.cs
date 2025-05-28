@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using project_IDF;
 
 
 namespace Project_IDF
 {
     internal class Menu
+
     {
+    Strike_Forces data = new Strike_Forces();
+
 
         //קבלת קלט מהמשתמש ובדיקת תקינות הבחירה
         public int ChoiceMenu()
@@ -83,8 +87,8 @@ namespace Project_IDF
                 {
                     case 1:
                     //תקיפה - מעבר לתפריט
-                    Console.Clear();
-                    PrintMenu_1_1();
+                        Console.Clear();
+                        PrintMenu_1_1();
                         menu_1_1();
                         break;
                     case 2:
@@ -122,18 +126,21 @@ namespace Project_IDF
         }
         public void menu_1_1()
         {
+
             int choice = ChoiceMenu();
             switch (choice)
             {
                 case 1:
                     //תקיפה - מעבר לתפריט
+                    Console.Clear();
                     DisplayForceStatus.Displayer(data);
+                    Console.ReadLine();
+
                     break;
                 case 2:
                     Console.WriteLine("enter the name of the weapon");
                     string name = Console.ReadLine();
                     data.AppendWeaponUnits(name);
-                    break;
                     break;
                 case 9:
                     // חזרה תפריט אחד קודם
@@ -150,7 +157,10 @@ namespace Project_IDF
                     menu_1_1();
                     break;
             }
+            Console.WriteLine("next > enter");
+            Console.ReadLine();
             start();
+
         }
         public void PrintMenu_1_1()
         {

@@ -16,6 +16,12 @@ namespace Project_IDF
 
         static void Main(string[] args)
         {
+            Menu a = new Menu();
+            Strike_Forces data = new Strike_Forces();
+            //DisplayForceStatus.Displayer(data);
+
+            a.start();
+
 
         }
     }
